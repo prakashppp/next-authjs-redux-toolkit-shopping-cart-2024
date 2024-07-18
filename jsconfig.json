@@ -1,7 +1,18 @@
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     }
+//   }
+// }
+
 {
   "compilerOptions": {
+    "baseUrl": ".", // Base directory to resolve non-relative module names
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"] // Path alias
     }
-  }
+  },
+  "include": ["src/**/*"], // Include all files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist directories
 }
