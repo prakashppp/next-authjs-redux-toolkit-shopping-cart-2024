@@ -8,5 +8,4 @@ export const {
   signOut,
 } = NextAuth({
   providers: [Github],
-  // secret: 'my_default'
-});
+  });
